@@ -1,0 +1,22 @@
+{
+	"extends": [
+		"stylelint-config-recommended"
+	],
+	"plugins": [
+		"stylelint-order"
+	],
+	"rules": {
+		"order/properties-order": [
+			"position", 
+			"z-index", 
+			"top", 
+			"right", 
+			"bottom", 
+			"left"
+		],
+		"indentation": [
+			"tab"
+		],
+		"color-hex-case": "upper"
+	}
+}
