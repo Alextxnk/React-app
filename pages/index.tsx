@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Htag, P, Tag } from '../components';
 
 export default function Home(): JSX.Element {
+  const [counter, setCounter] = useState<number>(0); // начально значение 0 
   return (
     <>
       <Htag tag='h1'>Text</Htag>
-      <Button appearance='primary' arrow='right'>Button</Button>
+      <Htag tag='h1'>{counter}</Htag>
+      <Button appearance='primary' arrow='right' onClick={() => setCounter(x => x + 1)}>Button</Button>
       <Button appearance='ghost' arrow='right'>Button</Button>
       <P size='l'>Большой</P>
 			<P>Средний</P>
