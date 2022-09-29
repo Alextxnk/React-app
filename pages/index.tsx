@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Htag, P, Tag } from '../components';
+import { Button, Htag, P, Tag, Rating } from '../components';
 
 export default function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0); // начально значение 0 
