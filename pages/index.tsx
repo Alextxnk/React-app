@@ -1,8 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Htag, P, Tag } from '../components';
 
 export default function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0); // начально значение 0 
+
+  useEffect(() => {
+    console.log('Counter ' + counter);
+    return function cleanup() {
+      console.log('Unmount');
+    };
+  }); 
+
+  useEffect(() => {
+    console.log('Mounted ');
+  }, []); // пустые скобки - только один раз будет выведен Counter 0 
+
   return (
     <>
       <Htag tag='h1'>Text</Htag>
