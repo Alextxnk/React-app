@@ -1,7 +1,6 @@
 import { LayoutProps } from './Layout.props';
 import styles from './Layout.module.css';
 import cn from 'classnames';
-import Head from 'next/head';
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
    return (

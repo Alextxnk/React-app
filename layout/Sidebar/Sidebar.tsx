@@ -1,9 +1,8 @@
-import { LayoutProps } from './Sidebar.props';
-import styles from './Layout.module.css';
+import { SidebarProps } from './Sidebar.props';
+import styles from './Sidebar.module.css';
 import cn from 'classnames';
-import Head from 'next/head';
 
-export const Layout = ({ children }: LayoutProps): JSX.Element => {
+export const Layout = ({ children }: SidebarProps): JSX.Element => {
    return (
       <>
          <Header />
