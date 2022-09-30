@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Htag, P, Tag, Rating } from '../components';
+import { Layout} from '../layout/Layout';
 
 export default function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0); // начально значение 0 
@@ -17,7 +18,7 @@ export default function Home(): JSX.Element {
   }, []); // пустые скобки - только один раз будет выведен Counter 0 
 
   return (
-    <>
+    <Layout>
       <Htag tag='h1'>Text</Htag>
       <Htag tag='h1'>{counter}</Htag>
       <Button appearance='primary' arrow='right' onClick={() => setCounter(x => x + 1)}>Button</Button>
@@ -30,6 +31,6 @@ export default function Home(): JSX.Element {
 			<Tag size='s' color='green'>Green</Tag>
 			<Tag color='primary'>Primary</Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
-    </>
+    </Layout>
   );
 }
