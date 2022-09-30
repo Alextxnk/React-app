@@ -11,7 +11,11 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
    const constructRating = (currentRating: number) => {
       const updatedArray = ratingArray.map((r: JSX.Element, i: number) => {
          return (
-            <StarIcon />
+            <StarIcon 
+               className={cn(styles.star, {
+                  [styles.fill]: i < currentRating
+               })}
+            />
          );
       });
    };

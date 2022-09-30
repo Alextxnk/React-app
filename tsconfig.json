@@ -7,6 +7,7 @@
       "esnext"
     ],
     "allowJs": false, // если будет встречаться в файле JS, мы будем получать ошибку
+    "noImplicitAny": false,
     "skipLibCheck": true, // при компиляции игнорируем какие-то ошибки, которые случаются в библиотеках node_modules
     "strict": true, // позволяет более жестко ограничивать нас в TypeScript 
     "strictPropertyInitialization": false, // не обязательно инициализировать каждое свойство класса
@@ -22,6 +23,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "images.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],
