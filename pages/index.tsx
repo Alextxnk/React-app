@@ -28,6 +28,7 @@ export default function Home(): JSX.Element {
 			<Tag size='m' color='red'>Red</Tag>
 			<Tag size='s' color='green'>Green</Tag>
 			<Tag color='primary'>Primary</Tag>
+      <Rating rating={4}/>
     </>
   );
 }
